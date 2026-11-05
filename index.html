@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lumen Studio — สตูดิโอเว็บ 3D</title>
+<meta name="description" content="Lumen Studio ออกแบบและสร้างเว็บไซต์ 3D ที่สวย ลื่น และโหลดเร็ว">
+<link rel="icon" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600;800&family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+<div id="loader"><span>Lumen</span></div>
+<canvas id="gl" aria-hidden="true"></canvas>
+<div id="glow" aria-hidden="true"></div>
+
+<header class="nav">
+  <a class="logo" href="#top">Lumen</a>
+  <button class="burger" aria-label="เมนู" aria-expanded="false"><i></i><i></i></button>
+  <nav id="menu">
+    <a href="#works">ผลงาน</a><a href="#services">บริการ</a><a href="#process">ขั้นตอน</a><a href="#contact">คุยกับเรา</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <h1 class="split">เว็บที่คุณ<br>หมุนดูได้</h1>
+    <p class="lead">เราสร้างเว็บไซต์ 3D ให้แบรนด์ที่อยากให้คนหยุดเลื่อน — สวย ลื่น และโหลดไวแม้บนมือถือ</p>
+    <div class="cta"><a class="btn solid" href="#works">ดูผลงาน</a><a class="btn" href="#contact">เริ่มโปรเจกต์</a></div>
+    <p class="hint">เลื่อนลงเพื่อให้วัตถุ 3D เคลื่อนตาม</p>
+  </section>
+
+  <section class="marquee" aria-hidden="true"><div><span>WebGL</span><span>Three.js</span><span>Shader</span><span>Motion</span><span>Product 3D</span><span>Brand Site</span><span>WebGL</span><span>Three.js</span><span>Shader</span><span>Motion</span><span>Product 3D</span><span>Brand Site</span></div></section>
+
+  <section id="works" class="wrap">
+    <h2>ผลงานที่เลือกมา</h2>
+    <div class="works">
+      <article class="card tilt a1"><h3>Orbit Watch</h3><p>เว็บเปิดตัวนาฬิกา หมุนดูได้ 360° ทุกชิ้นส่วน</p></article>
+      <article class="card tilt a2"><h3>Kaya Coffee</h3><p>เมล็ดกาแฟลอยตามเมาส์ พร้อมเมนูสั่งซื้อ</p></article>
+      <article class="card tilt a3"><h3>Nimbus Air</h3><p>สายการบินจำลองเมฆแบบเรียลไทม์</p></article>
+      <article class="card tilt a4"><h3>Arc Gallery</h3><p>แกลเลอรีศิลปะเดินชมได้ในห้อง 3 มิติ</p></article>
+    </div>
+  </section>
+
+  <section id="stats" class="wrap stats">
+    <div><b data-n="64">0</b><span>โปรเจกต์ส่งมอบ</span></div>
+    <div><b data-n="98">0</b><span>คะแนน Lighthouse เฉลี่ย</span></div>
+    <div><b data-n="60">0</b><span>เฟรมต่อวินาทีที่ตั้งเป้า</span></div>
+    <div><b data-n="12">0</b><span>ประเทศที่ลูกค้าอยู่</span></div>
+  </section>
+
+  <section id="services" class="wrap">
+    <h2>สิ่งที่เราทำ</h2>
+    <ul class="services">
+      <li class="tilt"><h3>เว็บแบรนด์ 3 มิติ</h3><p>หน้าเว็บทั้งหน้าเป็นฉากเดียว เล่าเรื่องผ่านการเลื่อน</p></li>
+      <li class="tilt"><h3>โชว์สินค้า 3D</h3><p>หมุน ซูม เปลี่ยนสีสินค้าได้จริง ใช้แทนรูปถ่ายหลายสิบใบ</p></li>
+      <li class="tilt"><h3>ปรับความเร็ว</h3><p>บีบโมเดล ลดภาระ GPU ให้เครื่องรุ่นกลางยังลื่น</p></li>
+      <li class="tilt"><h3>ระบบหลังบ้าน</h3><p>แก้ข้อความ รูป และโมเดลเองได้ ไม่ต้องรอเรา</p></li>
+    </ul>
+  </section>
+
+  <section id="process" class="wrap">
+    <h2>ทำงานกัน 4 ขั้น</h2>
+    <ol class="steps">
+      <li><b>1</b><div><h3>คุยโจทย์</h3><p>เป้าหมาย กลุ่มลูกค้า และเครื่องที่คนใช้จริง</p></div></li>
+      <li><b>2</b><div><h3>ร่างฉาก</h3><p>สเก็ตช์ฉาก 3D และทดลองเคลื่อนไหวให้ดูก่อนสร้างจริง</p></div></li>
+      <li><b>3</b><div><h3>สร้างและทดสอบ</h3><p>วัดเฟรมเรตบนมือถือและโน้ตบุ๊กทุกสัปดาห์</p></div></li>
+      <li><b>4</b><div><h3>ส่งมอบ</h3><p>ไฟล์ครบ พร้อมคู่มือแก้ไขและดูแลต่อ</p></div></li>
+    </ol>
+  </section>
+
+  <section id="contact" class="wrap contact">
+    <h2>เล่าไอเดียให้เราฟัง</h2>
+    <form id="form" novalidate>
+      <label>ชื่อ<input name="n" required autocomplete="name"></label>
+      <label>อีเมล<input name="e" type="email" required autocomplete="email"></label>
+      <label>โปรเจกต์ของคุณ<textarea name="m" rows="4" required></textarea></label>
+      <button class="btn solid" type="submit">ส่งข้อความ</button>
+      <p id="msg" role="status"></p>
+    </form>
+  </section>
+</main>
+<footer><span>© 2026 Lumen Studio</span><a href="#top">กลับขึ้นบน</a></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="js/scene.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
